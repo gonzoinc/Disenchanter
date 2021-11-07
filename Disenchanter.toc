@@ -1,10 +1,10 @@
 ## Interface: 90105
 ## Version: v1.0
-## Title: |cFF7FFFD4Disenchanter|r by: |cFFE6CC80drgonzo3000
+## Title: |cFF7FFFD4Disenchanter|r by: |cFFE6CC80Gonzo Inc
 ## Notes: |cFFE6CC80Displays the materials produced when armor or weapons are disenchanted within the items tooltip
 ## Dependencies: Ace3
 ## X-Curse-Project-ID: 544464
-## Author: drgonzo3000
+## Author: gonzoinc
 
 core.lua
 Data\expansions.lua

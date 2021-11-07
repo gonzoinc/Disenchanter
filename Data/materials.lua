@@ -1,13 +1,3 @@
-
-local classic
-local bc
-local wotlk
-local cata
-local mists
-local wod
-local legion
-local boa
-local shadow
 local mats
 
 -- Enchanting reagents
@@ -15,13 +5,14 @@ local mats
 --- uncommon
 local LMAGIC = 10938
 local GMAGIC = 10939
-local STRANGE = 10940
+local STRANGE = 10940 --
 --- rare
 local LETERNAL = 16202
 local SBRILLIANT = 14343
 local ILLUSION = 16204
 --- epic
 local RILLUSION = 156930
+local LBRILLIANT = 14344
 local GETERNAL = 16203
 
 
@@ -32,7 +23,6 @@ local LPLANAR = 22447
 --- rare
 local GPLANAR = 22446
 local SPRISMATIC = 22448
-
 --- epic
 local LPRISMATIC = 22449
 local VOID = 22450
@@ -42,7 +32,6 @@ local VOID = 22450
 --- uncommon
 local INFINITE = 34054
 local LCOSMIC = 34056
-
 --- rare
 local SDREAM_SHARD = 34053
 local GCOSMIC = 34055
@@ -56,7 +45,7 @@ local ABYSS = 34057
 local HYPNOTIC = 52555
 local LCELESTIAL = 52718
 --- rare
-local GCELESTIAL = 52719
+local GCELESTIAL = 52719 -- And Uncommon
 local SHEAVENLY_SHARD = 52720
 --- epic
 local HEAVENLY_SHARD = 52721
@@ -135,17 +124,102 @@ function getExpansionMaterials(expID, iQuality)
         return mats{};
     end
 
+-- Classic Mats
     if (expID == 0) then
         if (iQuality == 2 ) then --Uncommon
             mats = { LMAGIC, GMAGIC, STRANGE }
         elseif (iQuality == 3 ) then --rare
             mats = { LETERNAL, SBRILLIANT, ILLUSION }
         elseif (iQuality == 4 ) then --epic
-            mats = { RILLUSION, GETERNAL }
+            mats = { RILLUSION, LBRILLIANT, GETERNAL }
         end
         return mats
     end
 
+-- TBC Mats
+    if (expID == 1) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { ARCANE, LPLANAR }
+        elseif (iQuality == 3 ) then --rare
+            mats = { GPLANAR, SPRISMATIC }
+        elseif (iQuality == 4 ) then --epic
+            mats = { LPRISMATIC, VOID }
+        end
+        return mats
+    end
+
+-- WOTLK Mats
+    if (expID == 2) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { INFINITE, LCOSMIC }
+        elseif (iQuality == 3 ) then --rare
+            mats = { SDREAM_SHARD, GCOSMIC }
+        elseif (iQuality == 4 ) then --epic
+            mats = { DREAM_SHARD, ABYSS }
+        end
+        return mats
+    end
+
+-- CATA Mats
+    if (expID == 3) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { HYPNOTIC, LCELESTIAL, GCELESTIAL }
+        elseif (iQuality == 3 ) then --rare
+            mats = { GCELESTIAL, SHEAVENLY_SHARD }
+        elseif (iQuality == 4 ) then --epic
+            mats = { HEAVENLY_SHARD, MAELSTROM }
+        end
+        return mats
+    end
+
+-- MISTS Mats
+    if (expID == 4) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { ETHERAL, SETHERAL }
+        elseif (iQuality == 3 ) then --rare
+            mats = { SPIRIT, MYSTERIOUS }
+        elseif (iQuality == 4 ) then --epic
+            mats = { SHA_CRYSTAL }
+        end
+        return mats
+    end
+
+-- WOD Mats
+    if (expID == 5) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { DRAENIC }
+        elseif (iQuality == 3 ) then --rare
+            mats = { SLUMINOUS, LUMINOUS }
+        elseif (iQuality == 4 ) then --epic
+            mats = { TEMPORAL, FRACTEMPORAL }
+        end
+        return mats
+    end
+-- Legion Mats
+    if (expID == 6) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { ARKHANA }
+        elseif (iQuality == 3 ) then --rare
+            mats = { LEYLIGHT_SHARD }
+        elseif (iQuality == 4 ) then --epic
+            mats = { CHAOS_CRYSTAL }
+        end
+        return mats
+    end
+
+-- BOA Mats
+    if (expID == 7) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { GLOOMDUST }
+        elseif (iQuality == 3 ) then --rare
+            mats = { UMBRASHARD }
+        elseif (iQuality == 4 ) then --epic
+            mats = { VEILEDCRYSTAL }
+        end
+        return mats
+    end
+
+    --Shadowlands Mats
     if (expID == 8) then
         if (iQuality == 2 ) then --Uncommon
             mats = { SOULDUSTNEW }
