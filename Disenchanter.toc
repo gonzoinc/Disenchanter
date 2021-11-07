@@ -4,7 +4,7 @@
 ## Notes: |cFFE6CC80Displays the materials produced when armor or weapons are disenchanted within the items tooltip
 ## Dependencies: Ace3
 ## X-Curse-Project-ID: 544464
-## Author: gonzoinc
+## Author: GonzoInc
 
 core.lua
 Data\expansions.lua
