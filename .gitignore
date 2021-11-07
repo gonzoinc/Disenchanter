@@ -1,3 +1,6 @@
+# remove ide files
+/.idea
+
 # Compiled Lua sources
 luac.out
 
