@@ -1,7 +1,7 @@
 Disenchanter = LibStub("AceAddon-3.0"):NewAddon("Disenchanter", "AceEvent-3.0");
 
 local name = "Disenchanter";
-local version = "v1.0";
+local version = "v1.0.1";
 local itemID
 local expacID
 local iType
