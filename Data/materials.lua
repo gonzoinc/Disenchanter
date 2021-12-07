@@ -175,9 +175,9 @@ function getExpansionMaterials(expID, iQuality)
 -- MISTS Mats
     if (expID == 4) then
         if (iQuality == 2 ) then --Uncommon
-            mats = { ETHERAL, SETHERAL }
-        elseif (iQuality == 3 ) then --rare
             mats = { SPIRIT, MYSTERIOUS }
+        elseif (iQuality == 3 ) then --rare
+            mats = { ETHERAL, SETHERAL }
         elseif (iQuality == 4 ) then --epic
             mats = { SHA_CRYSTAL }
         end
