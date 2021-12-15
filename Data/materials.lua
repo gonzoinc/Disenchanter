@@ -139,11 +139,11 @@ function getExpansionMaterials(expID, iQuality)
 -- TBC Mats
     if (expID == 1) then
         if (iQuality == 2 ) then --Uncommon
-            mats = { ARCANE, LPLANAR }
+            mats = { ARCANE, LPLANAR, GPLANAR }
         elseif (iQuality == 3 ) then --rare
-            mats = { GPLANAR, SPRISMATIC }
+            mats = { SPRISMATIC, LPRISMATIC }
         elseif (iQuality == 4 ) then --epic
-            mats = { LPRISMATIC, VOID }
+            mats = { VOID }
         end
         return mats
     end
@@ -151,11 +151,11 @@ function getExpansionMaterials(expID, iQuality)
 -- WOTLK Mats
     if (expID == 2) then
         if (iQuality == 2 ) then --Uncommon
-            mats = { INFINITE, LCOSMIC }
+            mats = { INFINITE, LCOSMIC, GCOSMIC }
         elseif (iQuality == 3 ) then --rare
-            mats = { SDREAM_SHARD, GCOSMIC }
+            mats = { SDREAM_SHARD, DREAM_SHARD }
         elseif (iQuality == 4 ) then --epic
-            mats = { DREAM_SHARD, ABYSS }
+            mats = { ABYSS }
         end
         return mats
     end
@@ -165,9 +165,9 @@ function getExpansionMaterials(expID, iQuality)
         if (iQuality == 2 ) then --Uncommon
             mats = { HYPNOTIC, LCELESTIAL, GCELESTIAL }
         elseif (iQuality == 3 ) then --rare
-            mats = { GCELESTIAL, SHEAVENLY_SHARD }
+            mats = { SHEAVENLY_SHARD, HEAVENLY_SHARD }
         elseif (iQuality == 4 ) then --epic
-            mats = { HEAVENLY_SHARD, MAELSTROM }
+            mats = { MAELSTROM }
         end
         return mats
     end
