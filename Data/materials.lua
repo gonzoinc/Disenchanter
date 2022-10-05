@@ -95,6 +95,14 @@ local SACREDSHARD = 172231
 --- epic
 local ETERNALCRYS = 172232
 
+-- Dragonflight
+--- uncommon
+local CHROMATICDUST = 194123
+--- rare
+local VIBRANTSHARD = 19424
+--- epic
+local RESONANTCRY = 200113
+
 
 
 --- No Longer In Game
@@ -124,7 +132,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats{};
     end
 
--- Classic Mats
+    -- Classic Mats
     if (expID == 0) then
         if (iQuality == 2 ) then --Uncommon
             mats = { LMAGIC, GMAGIC, STRANGE }
@@ -136,7 +144,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
--- TBC Mats
+    -- TBC Mats
     if (expID == 1) then
         if (iQuality == 2 ) then --Uncommon
             mats = { ARCANE, LPLANAR, GPLANAR }
@@ -148,7 +156,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
--- WOTLK Mats
+    -- WOTLK Mats
     if (expID == 2) then
         if (iQuality == 2 ) then --Uncommon
             mats = { INFINITE, LCOSMIC, GCOSMIC }
@@ -160,7 +168,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
--- CATA Mats
+    -- CATA Mats
     if (expID == 3) then
         if (iQuality == 2 ) then --Uncommon
             mats = { HYPNOTIC, LCELESTIAL, GCELESTIAL }
@@ -172,7 +180,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
--- MISTS Mats
+    -- MISTS Mats
     if (expID == 4) then
         if (iQuality == 2 ) then --Uncommon
             mats = { SPIRIT, MYSTERIOUS }
@@ -184,7 +192,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
--- WOD Mats
+    -- WOD Mats
     if (expID == 5) then
         if (iQuality == 2 ) then --Uncommon
             mats = { DRAENIC }
@@ -195,7 +203,8 @@ function getExpansionMaterials(expID, iQuality)
         end
         return mats
     end
--- Legion Mats
+
+    -- Legion Mats
     if (expID == 6) then
         if (iQuality == 2 ) then --Uncommon
             mats = { ARKHANA }
@@ -207,7 +216,7 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
--- BOA Mats
+    -- BOA Mats
     if (expID == 7) then
         if (iQuality == 2 ) then --Uncommon
             mats = { GLOOMDUST }
@@ -231,5 +240,16 @@ function getExpansionMaterials(expID, iQuality)
         return mats
     end
 
+    --Dragonflight Mats
+    if (expID == 9) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { CHROMATICDUST }
+        elseif (iQuality == 3 ) then --rare
+            mats = { VIBRANTSHARD }
+        elseif (iQuality == 4 ) then --epic
+            mats = { RESONANTCRY }
+        end
+        return mats
+    end
 
 end

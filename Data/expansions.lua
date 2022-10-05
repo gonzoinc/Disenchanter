@@ -20,10 +20,9 @@ function ExpansionText(expId)
         eText = "|cFFFF7D0ABattle of Azeroth"
     elseif (expId == 8) then
         eText = "|cFFE6CC80Shadowlands"
+    elseif (expId == 9) then
+        eText = "|cFA2AAAcDragonflight"
     end
 
     return eText
 end
-
-
-
