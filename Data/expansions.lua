@@ -21,7 +21,7 @@ function ExpansionText(expId)
     elseif (expId == 8) then
         eText = "|cFFE6CC80Shadowlands"
     elseif (expId == 9) then
-        eText = "|cFA2AAAcDragonflight"
+        eText = "|cFFA0A0A0Dragonflight"
     end
 
     return eText
