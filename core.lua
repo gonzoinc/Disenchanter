@@ -20,7 +20,7 @@ function Disenchanter:OnInitialize()
     )
 end
 
-GameTooltip:HookScript("OnTooltipSetItem",
+TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item,
         function(self)
             itemName, itemLink = self:GetItem()
         
