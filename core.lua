@@ -22,8 +22,9 @@ end
 
 TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item,
         function(self)
+            if self ~= GameTooltip then return end
             itemName, itemLink = self:GetItem()
-        
+
             if itemLink ~= nil then
                 itemID = tonumber(strmatch(itemLink, "item:(%d+):"))
 
@@ -41,14 +42,14 @@ TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item,
                         iCosmetic = true
                     end
 
-                    GameTooltip:AddLine("|cFFFFFFFFExpansion: " .. ExpansionText(expacID), 1, 1, 1, 1)
+                    self:AddLine("|cFFFFFFFFExpansion: " .. ExpansionText(expacID), 1, 1, 1, 1)
                     if ((iType == "Armor" or iType == "Weapon") and not iCosmetic) then
-                        GameTooltip:AddLine("\n|cFF7FFFD4------ Disenchanter ------", 1, 1, 1, 1)
-                        GameTooltip:AddLine("|cFFFFFFFFQuality: " .. ItemQuality(iQuality), 1, 1, 1, 1)
+                        self:AddLine("\n|cFF7FFFD4------ Disenchanter ------", 1, 1, 1, 1)
+                        self:AddLine("|cFFFFFFFFQuality: " .. ItemQuality(iQuality), 1, 1, 1, 1)
                         if iQuality >=2  and iQuality <=4 then
                             mats = getExpansionMaterials(expacID,iQuality)
                             if mats ~= nil then
-                                GameTooltip:AddLine("|cFF7FFFD4Disenchants into: \n", 1, 1, 1, 1)
+                                self:AddLine("|cFF7FFFD4Disenchants into: \n", 1, 1, 1, 1)
                                 for i, matID in pairs(mats) do
                                     if matID ~= nil then
 
@@ -65,12 +66,12 @@ TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item,
                                             local r, g, b, hex = {1,1,1,"ffffff"}
                                         end
 
-                                        GameTooltip:AddLine("   " .. "|T"..iTexture..":0|t " .. matString, r, g, b, 1)
+                                        self:AddLine("   " .. "|T"..iTexture..":0|t " .. matString, r, g, b, 1)
                                     end
                                 end
                             end
                         end
-                        GameTooltip:AddLine(" ", nil, nil, nil, 0)
+                        self:AddLine(" ", nil, nil, nil, 0)
                     end
                 end
             end
