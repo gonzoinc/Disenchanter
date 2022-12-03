@@ -99,7 +99,7 @@ local ETERNALCRYS = 172232
 --- uncommon
 local CHROMATICDUST = 194123
 --- rare
-local VIBRANTSHARD = 19424
+local VIBRANTSHARD = 194124
 --- epic
 local RESONANTCRY = 200113
 
