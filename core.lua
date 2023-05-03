@@ -20,6 +20,15 @@ function Disenchanter:OnInitialize()
     )
 end
 
+AddonCompartmentFrame:RegisterAddon({
+    text = "|cFF7FFFD4Disenchanter|r",
+    icon = "Interface\\AddOns\\Disenchanter\\Textures\\DIS_Logo",
+    notCheckable = true,
+    func = function()
+        print("|cFF7FFFD4Disenchanter|r by: |cFFE6CC80Gonzo Inc", version)
+    end,
+})
+
 TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item,
         function(self)
             if self ~= GameTooltip then return end
