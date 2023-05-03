@@ -1,5 +1,5 @@
 ## Interface: 100100
-## Version: v1.1.6
+## Version: v1.12.0
 ## Title: |cFF7FFFD4Disenchanter|r by: |cFFE6CC80Gonzo Inc
 ## Notes: |cFFE6CC80Displays the materials produced when armor or weapons are disenchanted within the items tooltip
 ## Dependencies: Ace3
