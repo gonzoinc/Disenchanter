@@ -6,10 +6,9 @@ Built to use the new mats system that is based off of the expansion the item was
 **_Only tested in retail version of WOW_**
 
 ## Dependencies
-If manually installing "You poor thing" the follwoing is required to download also:
-Ace 3 - https://www.wowace.com/projects/ace3/
+If manually installing "You poor thing" the following is required to download also: Ace 3 - https://www.wowace.com/projects/ace3/
 
-If using an addon manager IE Curseforge, WowUp, Etc, dependacies are installed automatically.
+If using an addon manager IE Curseforge, WowUp, Etc, dependencies are installed automatically.
 
 ## Features
 
