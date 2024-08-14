@@ -1,7 +1,7 @@
 Disenchanter = LibStub("AceAddon-3.0"):NewAddon("Disenchanter", "AceEvent-3.0");
 
 local name = "Disenchanter";
-local version = GetAddOnMetadata("Disenchanter","Version")
+local version = C_AddOns.GetAddOnMetadata("Disenchanter","Version")
 local itemID
 local expacID
 local iType
