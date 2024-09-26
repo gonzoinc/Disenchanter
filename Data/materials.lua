@@ -103,6 +103,14 @@ local VIBRANTSHARD = 194124
 --- epic
 local RESONANTCRY = 200113
 
+-- The War Within
+--- uncommon
+local STORMDUST = 219946
+--- rare
+local GLEAMINGSHARD = 219949
+--- epic
+local REFULGENTCRYSTAL = 219952
+
 
 
 --- No Longer In Game
@@ -248,6 +256,18 @@ function getExpansionMaterials(expID, iQuality)
             mats = { VIBRANTSHARD }
         elseif (iQuality == 4 ) then --epic
             mats = { RESONANTCRY }
+        end
+        return mats
+    end
+
+    --TWW Mats
+    if (expID == 10) then
+        if (iQuality == 2 ) then --Uncommon
+            mats = { STORMDUST }
+        elseif (iQuality == 3 ) then --rare
+            mats = { GLEAMINGSHARD }
+        elseif (iQuality == 4 ) then --epic
+            mats = { REFULGENTCRYSTAL }
         end
         return mats
     end
