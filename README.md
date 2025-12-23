@@ -1,3 +1,8 @@
+<span style="color:red; font-weight:bold;">
+*** This addon will not be updated for Midnight. I stopped playing WOW after Blizzard’s / Ion Hazzikostas’ idiotic API Purge. RIP WOW. ***
+</span>
+
+
 # Disenchanter
 Lightweight addon that displays the materials produced when armor or weapons are disenchanted within the items tooltip. 
 
